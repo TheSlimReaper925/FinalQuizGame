@@ -57,7 +57,6 @@ class UserInfoActivity : AppCompatActivity() {
             val lastName: String = lastnameTx.text.toString()
             val nickname: String = nickTx.text.toString()
             val gender: String = selected
-
             if (TextUtils.isEmpty(name) || TextUtils.isEmpty(lastName) || TextUtils.isEmpty(nickname) || TextUtils.isEmpty(gender)) {
                 Toast.makeText(this, "რომელიღაც ველი ცარიელია", Toast.LENGTH_LONG).show()
             } else {

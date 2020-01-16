@@ -26,6 +26,11 @@ class StatsAndInfoActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        changePassBtn.setOnClickListener {
+            val intent = Intent(this, ChangePasswordActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun addUserInfoChangeListener() {
@@ -43,9 +48,9 @@ class StatsAndInfoActivity : AppCompatActivity() {
                         nicknameText.text = userInfo.nickname
                         genderText.text = userInfo.gender
 
-
                     }
 
                 })
     }
+
 }

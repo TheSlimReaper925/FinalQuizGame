@@ -9,7 +9,4 @@ data class UserInfo(
     val lastname : String? ="",
     val nickname : String? = "",
     val gender : String? = ""
-
-
-
 )

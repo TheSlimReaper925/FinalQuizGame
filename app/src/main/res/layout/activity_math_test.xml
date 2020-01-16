@@ -4,6 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MathTestActivity">
+    tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/scoreValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        android:text="@null"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/questionOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="თუ a &lt; 0 და b > 0, მაშინ |a - b|="
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/answerOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="a + b" />
+
+            <RadioButton
+                android:id="@+id/answerTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="a - b" />
+
+            <RadioButton
+                android:id="@+id/answerThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="b - a" />
+
+            <RadioButton
+                android:id="@+id/answerFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-a - b" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/questionTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="სამკუთხედის ორ წვეროსთან მდებარე გარე კუთხეები ტოლია 120 და 135-ის. იპოვეთ ამ სამკუთხედის მესამე წვეროსთან მდებარე შიდა კუთხის სიდიდე"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/qTwoAone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15" />
+
+            <RadioButton
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="45" />
+
+            <RadioButton
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="75" />
+
+            <RadioButton
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="105" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ქულის ნახვა"
+            tools:text="Submit" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

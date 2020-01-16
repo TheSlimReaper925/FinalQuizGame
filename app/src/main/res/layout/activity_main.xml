@@ -19,6 +19,12 @@
             android:orientation="vertical" >
 
             <Button
+                android:id="@+id/signoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sign out" />
+
+            <Button
                 android:id="@+id/infobtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
