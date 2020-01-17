@@ -17,17 +17,12 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         auth = FirebaseAuth.getInstance()
-
-        signUpBtn.setOnClickListener {
-            var intent = Intent(this,SignupActivity::class.java)
-            startActivity(intent)
-        }
-
         if (auth.currentUser != null) {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
+
 
         logInBtn.setOnClickListener {
             val em = email.text.toString()
@@ -46,6 +41,16 @@ class LoginActivity : AppCompatActivity() {
                     }
                 }
             }
+        }
+
+        signUpBtn.setOnClickListener {
+            val intent = Intent(this,SignupActivity::class.java)
+            startActivity(intent)
+        }
+
+        forgetPass.setOnClickListener {
+            val intent = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intent)
         }
     }
 }

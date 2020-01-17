@@ -27,7 +27,10 @@ class MathTestActivity : AppCompatActivity() {
 
         val radioGroups = arrayOf(
             radioGroupOne,
-            radioGroupTwo
+            radioGroupTwo,
+            radioGroupThree,
+            radioGroupFour,
+            radioGroupFive
         )
 
         submitBtn.setOnClickListener {
@@ -37,8 +40,11 @@ class MathTestActivity : AppCompatActivity() {
 
 
                 when (radio.text) {
-                    "b - a" -> score++
-                    "75" -> score++
+                    "b - a" -> score += 2
+                    "75" -> score += 2
+                    "64000 სმ^2" -> score += 2
+                    "4" -> score += 2
+                    "-3" -> score += 2
                 }
             }
 

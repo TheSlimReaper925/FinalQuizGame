@@ -22,13 +22,13 @@
                 android:id="@+id/signoutBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="sign out" />
+                android:text="გასვლა" />
 
             <Button
                 android:id="@+id/infobtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="your info and stats" />
+                android:text="თქვენი ინფორმაცია" />
 
             <ImageView
                 android:id="@+id/mathPic"

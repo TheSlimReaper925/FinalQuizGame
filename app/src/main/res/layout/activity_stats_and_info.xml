@@ -18,37 +18,47 @@
             android:id="@+id/goInfoBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="change your information" />
+            android:text="ინფორმაციის შეცვლა" />
 
         <Button
             android:id="@+id/changePassBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="change your password" />
+            android:text="პაროლის შეცვლა" />
 
         <TextView
             android:id="@+id/nametext"
             android:layout_width="match_parent"
             android:layout_height="36dp"
+            android:text="სახელი: "
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/lastNameText"
             android:layout_width="match_parent"
             android:layout_height="36dp"
+            android:text="გვარი: "
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/nicknameText"
             android:layout_width="match_parent"
             android:layout_height="36dp"
+            android:text="ნიკნეიმი: "
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/genderText"
             android:layout_width="match_parent"
             android:layout_height="36dp"
+            android:text="სქესი"
             android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/deleteInfoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ყველა ინფორმაციის წაშლა" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "962885537040-6b4a0bhp7591jeg1as0q4dsqpbeknrar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quizgame",
+            "certificate_hash": "ee984612d7ed8f4456d72f28a2c733d057b992a5"
+          }
+        },
+        {
           "client_id": "962885537040-mu87q4p4c48ba6iiam29kvrh0l8kc2k7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
