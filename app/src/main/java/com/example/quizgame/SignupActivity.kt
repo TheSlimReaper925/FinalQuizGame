@@ -33,7 +33,7 @@ class SignupActivity : AppCompatActivity() {
                 auth.createUserWithEmailAndPassword(em, pass)
                     .addOnCompleteListener(this, OnCompleteListener { task ->
                         if (task.isSuccessful) {
-                            Toast.makeText(this, "ყველაფერი არის ბედნიერად!", Toast.LENGTH_LONG)
+                            Toast.makeText(this, "ყველაფერი არის ბედნიერად!!!", Toast.LENGTH_LONG)
                                 .show()
                             val intent = Intent(this, UserInfoActivity::class.java)
                             startActivity(intent)

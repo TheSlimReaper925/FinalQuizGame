@@ -32,7 +32,7 @@ class ForgotPasswordActivity : AppCompatActivity() {
                             Toast.makeText(this, "ლინკი შეცვლისთვის წარმატებით გაიგზავნა", Toast.LENGTH_LONG)
                                 .show()
                         } else {
-                            Toast.makeText(this, "იმეილზე ლინკის გაგზავნა ვერ მოხერხდა :(", Toast.LENGTH_LONG)
+                            Toast.makeText(this, "იმეილზე ლინკის გაგზავნა ვერ მოხერხდა", Toast.LENGTH_LONG)
                                 .show()
                         }
                     })
